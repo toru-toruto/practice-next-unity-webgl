@@ -8,7 +8,7 @@ export const UnityCanvas: React.FC = () => {
       loaderUrl: "/unity-build/simple-cube/Build/build-webgl.loader.js",
       dataUrl: "/unity-build/simple-cube/Build/build-webgl.data",
       frameworkUrl: "/unity-build/simple-cube/Build/build-webgl.framework.js",
-      codeUrl: "/unity-build/Build/simple-cube/build-webgl.wasm",
+      codeUrl: "/unity-build/simple-cube/Build/build-webgl.wasm",
     });
   const { devicePixelRatio } = useDpr();
 
