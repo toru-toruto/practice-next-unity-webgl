@@ -6,9 +6,9 @@ export const UnityCanvas: React.FC = () => {
   const { unityProvider, isLoaded, loadingProgression, requestFullscreen } =
     useUnityContext({
       loaderUrl: "/unity-build/Build/build-webgl.loader.js",
-      dataUrl: "/unity-build/Build/build-webgl.data.gz",
-      frameworkUrl: "/unity-build/Build/build-webgl.framework.js.gz",
-      codeUrl: "/unity-build/Build/build-webgl.wasm.gz",
+      dataUrl: "/unity-build/Build/build-webgl.data",
+      frameworkUrl: "/unity-build/Build/build-webgl.framework.js",
+      codeUrl: "/unity-build/Build/build-webgl.wasm",
     });
   const { devicePixelRatio } = useDpr();
 
