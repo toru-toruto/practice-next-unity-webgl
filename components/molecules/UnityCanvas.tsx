@@ -5,10 +5,10 @@ import { CanvasLoading } from "../atoms/CanvasLoading";
 export const UnityCanvas: React.FC = () => {
   const { unityProvider, isLoaded, loadingProgression, requestFullscreen } =
     useUnityContext({
-      loaderUrl: "/unity-build/Build/build-webgl.loader.js",
-      dataUrl: "/unity-build/Build/build-webgl.data",
-      frameworkUrl: "/unity-build/Build/build-webgl.framework.js",
-      codeUrl: "/unity-build/Build/build-webgl.wasm",
+      loaderUrl: "/unity-build/simple-cube/Build/build-webgl.loader.js",
+      dataUrl: "/unity-build/simple-cube/Build/build-webgl.data",
+      frameworkUrl: "/unity-build/simple-cube/Build/build-webgl.framework.js",
+      codeUrl: "/unity-build/Build/simple-cube/build-webgl.wasm",
     });
   const { devicePixelRatio } = useDpr();
 
