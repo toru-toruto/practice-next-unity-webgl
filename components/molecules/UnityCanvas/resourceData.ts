@@ -6,6 +6,7 @@ type BuildType =
   | "testCubeStatic1000_OtherPlace"
   | "testCubeRigidbody100_After"
   | "testSampleThirdPerson"
+  | "testSampleThirdPerson_Joystick"
   | "simpleCube";
 
 type ResourceData = {
@@ -43,6 +44,10 @@ export const resourceData: ResourceData = {
   testSampleThirdPerson: {
     folderName: "build-sample-third-person",
     fileName: "build-sample-third-person",
+  },
+  testSampleThirdPerson_Joystick: {
+    folderName: "build-sample-third-person-joystick",
+    fileName: "build-sample-third-person-joystick",
   },
   simpleCube: {
     folderName: "simple-cube",
