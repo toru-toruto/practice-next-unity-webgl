@@ -1,17 +1,21 @@
 import { useDpr } from "@/hooks/useDpr";
 import { Unity, useUnityContext } from "react-unity-webgl";
 import { CanvasLoading } from "../../atoms/CanvasLoading";
-import { resourceData } from "./resourceData";
+// import { resourceData } from "./resourceData";
 
 export const UnityCanvas: React.FC = () => {
-  const { folderName, fileName } = resourceData.testSampleThirdPerson_Joystick;
+  // const { folderName, fileName } = resourceData.testCubeRigidbody100_After;
 
   const { unityProvider, isLoaded, loadingProgression, requestFullscreen } =
     useUnityContext({
-      loaderUrl: `/unity-build/${folderName}/Build/${fileName}.loader.js`,
-      dataUrl: `/unity-build/${folderName}/Build/${fileName}.data`,
-      frameworkUrl: `/unity-build/${folderName}/Build/${fileName}.framework.js`,
-      codeUrl: `/unity-build/${folderName}/Build/${fileName}.wasm`,
+      loaderUrl:
+        "https://storage.googleapis.com/toruto-unity-webgl/cube-100/cube-100.loader.js",
+      dataUrl:
+        "https://storage.googleapis.com/toruto-unity-webgl/cube-100/cube-100.data.gz",
+      frameworkUrl:
+        "https://storage.googleapis.com/toruto-unity-webgl/cube-100/cube-100.framework.js.gz",
+      codeUrl:
+        "https://storage.googleapis.com/toruto-unity-webgl/cube-100/cube-100.wasm.gz",
     });
   const { devicePixelRatio } = useDpr();
 
