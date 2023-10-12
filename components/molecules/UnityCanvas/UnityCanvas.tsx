@@ -4,7 +4,7 @@ import { CanvasLoading } from "../../atoms/CanvasLoading";
 import { resourceData } from "./resourceData";
 
 export const UnityCanvas: React.FC = () => {
-  const { folderName, fileName } = resourceData.testCubeRigidbody1000_Other;
+  const { folderName, fileName } = resourceData.testSampleThirdPerson;
 
   const { unityProvider, isLoaded, loadingProgression, requestFullscreen } =
     useUnityContext({

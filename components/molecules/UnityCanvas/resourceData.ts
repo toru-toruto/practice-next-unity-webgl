@@ -5,6 +5,7 @@ type BuildType =
   | "testCubeStatic1000"
   | "testCubeStatic1000_OtherPlace"
   | "testCubeRigidbody100_After"
+  | "testSampleThirdPerson"
   | "simpleCube";
 
 type ResourceData = {
@@ -25,7 +26,7 @@ export const resourceData: ResourceData = {
   },
   testCubeRigidbody1000_Other: {
     folderName: "build-cube-rigidbody-1000-other",
-    fileName: "build-cube-rigidbody-1000-other"
+    fileName: "build-cube-rigidbody-1000-other",
   },
   testCubeStatic1000: {
     folderName: "test-cube-static-1000",
@@ -38,6 +39,10 @@ export const resourceData: ResourceData = {
   testCubeRigidbody100_After: {
     folderName: "build-cube-rigidbody-100-after",
     fileName: "build-cube-rigidbody-100-after",
+  },
+  testSampleThirdPerson: {
+    folderName: "build-sample-third-person",
+    fileName: "build-sample-third-person",
   },
   simpleCube: {
     folderName: "simple-cube",
