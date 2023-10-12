@@ -1,6 +1,5 @@
-import Image from "next/image";
 import { Inter } from "next/font/google";
-import { UnityCanvas } from "@/components/molecules/UnityCanvas";
+import { UnityCanvas } from "@/components/molecules/UnityCanvas/UnityCanvas";
 
 const inter = Inter({ subsets: ["latin"] });
 
