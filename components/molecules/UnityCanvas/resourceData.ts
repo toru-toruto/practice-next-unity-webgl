@@ -1,4 +1,8 @@
-type BuildType = "testCubeRigidbody1000" | "testCubeStatic1000" | "simpleCube";
+type BuildType =
+  | "testCubeRigidbody1000"
+  | "testCubeStatic1000"
+  | "testCubeStatic1000_OtherPlace"
+  | "simpleCube";
 
 type ResourceData = {
   [build in BuildType]: {
@@ -15,6 +19,10 @@ export const resourceData: ResourceData = {
   testCubeStatic1000: {
     folderName: "test-cube-static-1000",
     fileName: "build-cube-static-1000",
+  },
+  testCubeStatic1000_OtherPlace: {
+    folderName: "build-cube-static-1000-otherplace",
+    fileName: "build-cube-static-1000-otherplace",
   },
   simpleCube: {
     folderName: "simple-cube",
