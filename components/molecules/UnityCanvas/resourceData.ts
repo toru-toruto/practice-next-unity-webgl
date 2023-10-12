@@ -1,5 +1,6 @@
 type BuildType =
   | "testCubeRigidbody1000"
+  | "testCubeRigidbody1000_After"
   | "testCubeStatic1000"
   | "testCubeStatic1000_OtherPlace"
   | "simpleCube";
@@ -15,6 +16,10 @@ export const resourceData: ResourceData = {
   testCubeRigidbody1000: {
     folderName: "build-cube-rigidbody-1000",
     fileName: "build-cube-rigidbody-1000",
+  },
+  testCubeRigidbody1000_After: {
+    folderName: "build-cube-rigidbody-1000-after",
+    fileName: "build-cube-rigidbody-1000-after",
   },
   testCubeStatic1000: {
     folderName: "test-cube-static-1000",
