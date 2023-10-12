@@ -13,8 +13,8 @@ type ResourceData = {
 
 export const resourceData: ResourceData = {
   testCubeRigidbody1000: {
-    folderName: "test-cube-rigidbody-1000",
-    fileName: "build-webgl",
+    folderName: "build-cube-rigidbody-1000",
+    fileName: "build-cube-rigidbody-1000",
   },
   testCubeStatic1000: {
     folderName: "test-cube-static-1000",
