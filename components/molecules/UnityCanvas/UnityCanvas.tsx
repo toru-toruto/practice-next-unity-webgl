@@ -9,13 +9,13 @@ export const UnityCanvas: React.FC = () => {
   const { unityProvider, isLoaded, loadingProgression, requestFullscreen } =
     useUnityContext({
       loaderUrl:
-        "https://storage.googleapis.com/toruto-unity-webgl/cube-100/cube-100.loader.js",
+        "https://storage.googleapis.com/toruto-unity-webgl/tpc-sample/tpc-sample.loader.js",
       dataUrl:
-        "https://storage.googleapis.com/toruto-unity-webgl/cube-100/cube-100.data.gz",
+        "https://storage.googleapis.com/toruto-unity-webgl/tpc-sample/tpc-sample.data.gz",
       frameworkUrl:
-        "https://storage.googleapis.com/toruto-unity-webgl/cube-100/cube-100.framework.js.gz",
+        "https://storage.googleapis.com/toruto-unity-webgl/tpc-sample/tpc-sample.framework.js.gz",
       codeUrl:
-        "https://storage.googleapis.com/toruto-unity-webgl/cube-100/cube-100.wasm.gz",
+        "https://storage.googleapis.com/toruto-unity-webgl/tpc-sample/tpc-sample.wasm.gz",
     });
   const { devicePixelRatio } = useDpr();
 
