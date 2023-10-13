@@ -18,6 +18,15 @@ export const UnityCanvas: React.FC = () => {
 
   const unityRef = useRef<HTMLCanvasElement>(null);
 
+  const handleReso = (rate: number) => {
+    const canvas = unityRef.current;
+    if (canvas) {
+      const val = 1000 * rate;
+      canvas.height = val;
+      canvas.width = (val * innerWidth) / innerHeight;
+    }
+  };
+
   return (
     <div className="relative w-full h-full">
       <CanvasLoading isLoaded={isLoaded} progress={loadingProgression} />
@@ -28,24 +37,53 @@ export const UnityCanvas: React.FC = () => {
         matchWebGLToCanvasSize={false}
         ref={unityRef}
       />
-      <button
-        className="absolute top-0 left-0"
-        type="button"
-        onClick={() => {
-          const canvas = unityRef.current;
-          if (canvas) {
-            if (canvas.width == 240) {
-              canvas.width = 2000;
-              canvas.height = 2000;
-            } else {
-              canvas.width = 240;
-              canvas.height = 200;
-            }
-          }
-        }}
-      >
-        Change Resolution
-      </button>
+      <div className="absolute top-3 left-3 grid gap-4">
+        <div>
+          <button type="button" onClick={() => handleReso(0.01)}>
+            0.01
+          </button>
+        </div>
+        <div>
+          <button type="button" onClick={() => handleReso(0.1)}>
+            0.1
+          </button>
+        </div>
+        <div>
+          <button type="button" onClick={() => handleReso(0.2)}>
+            0.2
+          </button>
+        </div>
+        <div>
+          <button type="button" onClick={() => handleReso(0.3)}>
+            0.3
+          </button>
+        </div>
+        <div>
+          <button type="button" onClick={() => handleReso(0.5)}>
+            0.5
+          </button>
+        </div>
+        <div>
+          <button type="button" onClick={() => handleReso(0.7)}>
+            0.8
+          </button>
+        </div>
+        <div>
+          <button type="button" onClick={() => handleReso(1.0)}>
+            1.0
+          </button>
+        </div>
+        <div>
+          <button type="button" onClick={() => handleReso(2.0)}>
+            2.0
+          </button>
+        </div>
+        <div>
+          <button type="button" onClick={() => handleReso(4.0)}>
+            4.0
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
