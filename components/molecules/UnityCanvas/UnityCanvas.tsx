@@ -44,7 +44,7 @@ export const UnityCanvas: React.FC = () => {
           }
         }}
       >
-        フルスクリーン
+        Change Resolution
       </button>
     </div>
   );
